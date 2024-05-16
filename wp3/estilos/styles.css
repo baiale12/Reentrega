@@ -1,0 +1,374 @@
+         /* Fuente para toda la página */
+         body {
+             font-family: "Space Mono", monospace;
+             /* Cambia la fuente de toda la página a Verdana o una fuente sans-serif */
+         }
+
+         header {
+             display: flex;
+             align-items: center;
+         }
+
+         header img {
+             width: 50px;
+             /* Ajusta el ancho del logo según sea necesario */
+             height: auto;
+             /* Mantiene la proporción del logo */
+         }
+
+         header h1 {
+             margin-left: 10px;
+             /* Ajusta el margen según sea necesario */
+         }
+
+         nav {
+             background-color: #333;
+             /* Color de fondo de la barra de navegación */
+             padding: 10px;
+             /* Espacio alrededor del contenido de la barra de navegación */
+         }
+
+         ul {
+             list-style-type: none;
+             /* Eliminar los puntos de la lista */
+             margin: 0;
+             padding: 0;
+         }
+
+         li {
+             display: inline;
+             /* Mostrar los elementos de la lista en línea */
+             margin-right: 20px;
+             /* Espacio entre los elementos de la lista */
+         }
+
+         a {
+             color: white;
+             /* Color del texto de los enlaces */
+             text-decoration: none;
+             /* Eliminar subrayado de los enlaces */
+         }
+
+         a:hover {
+             text-decoration: underline;
+             /* Subrayado al pasar el mouse sobre los enlaces */
+         }
+
+
+         main ul {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+             text-align: center;
+             /* Centra el contenido horizontalmente */
+         }
+
+         main ul li {
+             display: inline-block;
+             /* Hace que los elementos de la lista sean en línea pero respeten márgenes y rellenos */
+             margin: 10px 150px;
+             /* Espacio entre las imágenes */
+         }
+
+         main ul li img {
+             max-width: 100%;
+             /* Asegura que las imágenes no sean más anchas que su contenedor */
+             height: auto;
+             /* Mantiene la relación de aspecto */
+             display: block;
+             /* Permite aplicar márgenes automáticos para centrar verticalmente */
+             margin: 0 auto;
+             /* Centra las imágenes horizontalmente */
+         }
+
+         /* Esta parte es para definir el segundo nav de la pagina Servicios */
+
+         .nav-container {
+             display: flex;
+             justify-content: center;
+             width: 30%;
+             background-color: white;
+         }
+
+         .nav-wrapper ul {
+             list-style-type: none;
+             display: flex;
+         }
+
+         .nav-wrapper ul li {
+             margin-left: 10px;
+         }
+
+         .nav-wrapper ul li:first-child {
+             margin-left: 10px;
+         }
+
+         .nav-wrapper ul li a {
+             text-decoration: none;
+         }
+
+         .nav-right {
+             background-color: darkgray;
+             font-size: small;
+             padding: 0;
+             position: fixed;
+         }
+
+         /* Estilos para el form*/
+         form {
+             margin-top: 20px;
+         }
+
+         form p {
+             margin-bottom: 10px;
+         }
+
+         input[type="text"],
+
+         select {
+             width: 100%;
+             padding: 8px;
+             margin-top: 5px;
+             border: 1px solid #ccc;
+             border-radius: 4px;
+             box-sizing: border-box;
+         }
+
+         input[type="submit"] {
+             background-color: #4CAF50;
+             color: white;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+             font-size: 16px;
+         }
+
+         input[type="submit"]:hover {
+             background-color: #45a049;
+         }
+
+         /* Estilos para el footer*/
+
+         footer {
+             background-color: black;
+             color: aliceblue;
+             margin-top: 2%;
+         }
+
+         /* Estilos para los iconos de INDEX*/
+         .iconos-container {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 20px;
+             /* Adjust as needed */
+         }
+
+         .iconos-container .icono {
+             flex: 1;
+             text-align: center;
+         }
+
+         .iconos-container .icono img {
+             width: 100px;
+             /* Adjust icon size */
+             height: auto;
+             margin-top: 15%;
+         }
+
+         .iconos-container .icono p {
+             margin-top: 10px;
+             /* Adjust as needed */
+         }
+
+         /* Caja fixed para reporte de acontecimientos de Seguridad */
+         .box {
+             position: fixed;
+             margin-top: 5%;
+             top: 0;
+             right: 0;
+             width: 20%;
+             background-color: #f0f0f0;
+             padding: 20px;
+             text-align: center;
+         }
+
+         /* Para alinear los campos del formulario */
+         form {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+         }
+
+         input,
+         textarea {
+             margin-bottom: 10px;
+             width: 80%;
+             padding: 5px;
+         }
+
+         input[type="submit"] {
+             width: auto;
+             padding: 5px 20px;
+         }
+
+         /* Para contacto */
+         .main_contacto {
+             width: 80%;
+             margin: 50px auto;
+             text-align: center;
+             background-color: #fff;
+             padding: 20px;
+             border-radius: 10px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+
+         /* carrousel historia */
+
+         #carousel-container {
+             width: 20%;
+             /* Ancho del carrusel */
+             margin: 0 auto;
+             position: relative;
+             overflow: hidden;
+         }
+
+         #carousel {
+             display: flex;
+             transition: transform 0.5s ease;
+         }
+
+         .carousel-item {
+             min-width: 100%;
+             overflow: hidden;
+         }
+
+         .carousel-item img {
+             width: 100%;
+             height: auto;
+         }
+
+         .arrow {
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             cursor: pointer;
+             z-index: 1;
+         }
+
+         #left-arrow {
+             color: rgb(255, 0, 60);
+             left: 10px;
+         }
+
+         #right-arrow {
+             color: rgb(255, 0, 60);
+             right: 10px;
+         }
+
+         /* Estilos para el contenedor del video de Sustentabilidad*/
+         .video-container {
+             position: relative;
+             width: 100%;
+         }
+
+         /* Estilos para el video */
+         video {
+             width: 100%;
+             height: auto;
+         }
+
+         /* Estilos para el texto superpuesto */
+         .texto-superpuesto {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             color: white;
+             font-size: 24px;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             text-align: center;
+             opacity: 0;
+             /* Inicialmente invisible */
+             animation: aparecer 3s forwards;
+             /* Animación de entrada */
+         }
+
+         /* Animación de entrada */
+         @keyframes aparecer {
+             from {
+                 opacity: 0;
+             }
+
+             to {
+                 opacity: 1;
+             }
+         }
+
+         /* Grid para las imágenes de personas en Nuestra Vision */
+         .grid-container {
+             display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             grid-template-rows: repeat(2, 1fr);
+             gap: 10px;
+             /* Espacio entre las imágenes */
+             padding: 60px;
+             margin: 0 100px 0 100px;
+         }
+
+         .grid-item {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+
+         .section_caja {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+         .caja {
+             padding: 20px;
+             border-radius: 10px;
+             border: 2px solid #333;
+             width: 60%;
+             text-align: center;
+             position: relative;
+             left: 20%;
+         }
+
+         .grid-container-SERV {
+             display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             /* Columnas flexibles */
+             grid-gap: 10px;
+             /* Espacio entre las celdas */
+         }
+
+         .grid-item-SERV {
+             padding: 10px;
+             /* Espaciado interno */
+             text-align: center;
+             /* Centrar el contenido */
+         }
+
+         /* Estilo específico para las imágenes */
+         .grid-item imgs {
+             width: 50px;
+             height: auto;
+             /* Mantener la proporción de la imagen */
+             display: block;
+             /* Asegura que no haya espacio extra debajo de la imagen */
+         }
+
+         /* contador seguridad*/
+
+         .counter {
+             border: 2px solid #45a049;
+             font-size: 16px;
+             font-weight: bold;
+             text-align: center;
+             margin-top: 70px;
+         }

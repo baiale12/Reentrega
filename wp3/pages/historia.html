@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="../multimedia/contreras-logo.png" alt="Logo de la empresa">
+        <h1>Contreras</h1>
+        </header>   
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./acerca.html">Acerca de</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./ubicacion.html">Ubicación</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <ul>
+            <li>
+                <div id="carousel-container">
+                    <div id="carousel">
+                        <div class="carousel-item"><img src="../multimedia/hermanos.jpg" alt="hermanos"></div>
+                        <div class="carousel-item"><img src="../multimedia/anios50.jpg" alt="años50"></div>
+                        <div class="carousel-item"><img src="../multimedia/anios60.jpg" alt="años60"></div>
+                        <div class="carousel-item"><img src="../multimedia/anios70.jpg" alt="años70"></div>
+                        <div class="carousel-item"><img src="../multimedia/anios80.jpg" alt="años80"></div>
+                        <div class="carousel-item"><img src="../multimedia/anios90.jpg" alt="años90"></div>
+                        <div class="carousel-item"><img src="../multimedia/2000.jpg" alt="años2000"></div>
+                                            </div>
+                    <div id="left-arrow" class="arrow">&#10094;</div>
+                    <div id="right-arrow" class="arrow">&#10095;</div>
+                </div>
+         
+            </li>
+            <p> <em>Nuestra Historia</em> <br>
+                <br>
+                En 1947 los hermanos Carlos y Víctor Contreras fundan en Zapala, Provincia de Neuquén,<br> 
+                Contreras Hermanos S.R.L, aunando escasos capitales, pasión por el trabajo <br>
+                y la ilusión del progreso económico y social.<br><p>
+        </ul>
+    </main>
+
+       
+    <script>
+        const carousel = document.getElementById('carousel');
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+        const totalImages = document.querySelectorAll('.carousel-item').length;
+        let currentIndex = 0;
+    
+        function showImage(index) {
+            if (index < 0) {
+                currentIndex = totalImages - 1;
+            } else if (index >= totalImages) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+    
+        leftArrow.addEventListener('click', () => showImage(currentIndex - 1));
+        rightArrow.addEventListener('click', () => showImage(currentIndex + 1));
+    
+        showImage(currentIndex); // Mostrar la primera imagen al cargar la página
+    </script>
+
+
+    <footer>
+    <p>Todas las obras de la empresa son certificadas bajo estandard <strong>ISO 9001</strong> </p>
+    <p> <em>Derechos reservados</em> </p>
+    </footer>
+
+</body>
+</html>
+
+
